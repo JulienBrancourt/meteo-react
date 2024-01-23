@@ -17,7 +17,7 @@ function App() {
 				setMeteo({
 					ville: dataAPI.data.city,
 					pays: dataAPI.data.country,
-					icon: dataAPI.data.current.weather.ic,
+					icone: dataAPI.data.current.weather.ic,
 					temperature: dataAPI.data.current.weather.tp,
 				});
 			});
@@ -35,7 +35,7 @@ function App() {
 					<p className="country-name">{meteo.pays}</p>
 					<p className="temperature">{meteo.temperature}°</p>
 					<div className="info-icon-container">
-						<img src={`/icons/${meteo.icon}.svg`} className="info-icon" alt="" />
+						<img src={`/icons/${meteo.icone}.svg`} className="info-icon" alt="" />
 					</div>
 				</>
 			)}
